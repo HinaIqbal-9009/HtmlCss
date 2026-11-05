@@ -1,0 +1,167 @@
+
+<html>
+<head>
+
+    <title>Student Management System</title>
+ <link rel="stylesheet" href="C:\Users\HP\Downloads\Demo Web\style.css">
+    <!-- <style>
+        /* CSS: Application Styling */
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f4f8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #243b55;
+        }
+
+        input {
+            padding: 10px;
+            margin: 5px;
+            width: 25%;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+        }
+
+        .add-btn {
+            background-color: #198754;
+        }
+
+        .edit-btn {
+            background-color: #0d6efd;
+        }
+
+        .delete-btn {
+            background-color: #dc3545;
+        }
+
+        .search-btn {
+            background-color: #6c757d;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        th {
+            background-color: #243b55;
+            color: white;
+        }
+
+        .total {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #198754;
+        }
+    </style> -->
+</head>
+
+<body>
+    <script type="text/javaScript">
+
+function func(){
+    alert(document.getElementById('name').value)
+
+}
+</script>
+<div class="container">
+
+    <h1>Student Management System</h1>
+
+    <!-- HTML: Input Form -->
+
+    <h3>Student Information</h3>
+
+    <input type="text" id="name"
+           placeholder="Enter Student Name">
+
+    <input type="text" id="roll"
+           placeholder="Enter Roll Number">
+
+    <input type="text" id="department"
+           placeholder="Enter Department">
+
+    <br>
+
+    <button class="add-btn" onclick="alert('Hello');">
+        Add Student
+    </button>
+
+    <button class="edit-btn" onclick="func();" >
+        Update Student
+    </button>
+
+    <hr>
+
+    <!-- Search Section -->
+
+    <h3>Search Student</h3>
+
+    <input type="text" id="search"
+           placeholder="Search by name">
+
+    <button class="search-btn">
+        Search
+    </button>
+
+    <button class="search-btn" >
+        Show All
+    </button>
+
+    <!-- Student Table -->
+
+    <h3>Student Records</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Roll Number</th>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+
+        <tbody id="studentTable">
+        </tbody>
+    </table>
+
+    <p class="total" id="total">
+        Total Students: 0
+    </p>
+
+</div>
+
+
+
+</body>
+</html>
